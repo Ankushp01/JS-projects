@@ -9,7 +9,6 @@ const copy = document.querySelector('.copy')
 generate.addEventListener('click', () => {
     let password = random();
     output.textContent = password;
-    input.value = ''
 })
 
 reset.addEventListener('click', resetInput)
@@ -27,19 +26,20 @@ copy.addEventListener('click', () => {
 function random() {
     const char = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+[]{}|;:,.<>?';
     let pass = `${keyword.value}`;
-    let len = input.value
-    if (pass.length > len){
-        for (let i = 0; i < len; i++) {
+    let len = input.value;
+    let pass_length = pass.length;
+    for (let i = 0; i < len; i++) {
+        if (len > pass_length) {
             let randomIndex = Math.floor(Math.random() * char.length);
             pass += char[randomIndex];
-            console.log(keyword.value.length);
+            pass_length++;
         }
-        return pass
     }
+    return pass
 }
-console.log(keyword.value.length);
 
 function resetInput() {
     input.value = ''
     output.textContent = ''
+    keyword.value = ''
 }
