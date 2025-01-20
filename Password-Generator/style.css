@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(225, 204, 255, 0.8), rgba(238, 145, 159, 0.8)); /* Soft pastel gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #4c4c4c; /* Dark gray text for contrast */
+}
+
+.container {
+    background: #fff; /* White background for the card */
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.container .head h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333; /* Dark text for title */
+}
+
+.container .head .logo {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #e0e0e0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.container .head .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .content-container {
+    margin: 20px 0;
+    padding: 10px;
+    white-space: nowrap; /* Prevent elements from wrapping to the next line */
+}
+
+.container .content-container img,
+.container .content-container input {
+    display: inline-block; /* Align elements horizontally */
+    vertical-align: middle; /* Vertically align elements to the middle */
+    margin-right: 5px; /* Add spacing between elements */
+}
+
+.container .content-container img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .content-container input {
+    font-size: 18px;
+    width: 230px;
+    padding: 20px;
+    border-radius: 15px 20px;
+    border: 0;
+    background-color: #f9f9f9;
+    outline: none;
+    color: #333;
+}
+
+
+.container .content-container img:hover{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .generate-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container .generate {
+    background-color: #ff5c8e; /* Soft pink color */
+    width: 130px;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -3px -3px 15px rgba(255, 50, 120, 0.3);
+}
+
+.container .generate:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .result-container {
+    margin: 20px auto;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.container .result-container:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .result-container .result {
+    flex-grow: 1;
+    font-size: 20px;
+    color: #333;
+    padding: 0 10px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .result-container img {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .result-container img:hover{
+    opacity: 0.6;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(243, 153, 243),rgb(112, 2, 112));
+    height: 100vh;
+    color: #fff;
+}
+
+.container{
+    background-image: linear-gradient(135deg, rgb(244, 164, 244),rgb(132, 7, 132));
+    border: 1px solid black;
+    margin: 100px auto 0;
+    width: 75%;
+    max-width: 700px;
+}
+
+.container h1{
+    font-weight: 500;
+}
+
+.container .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container .head .logo{
+    width: 45px;
+    height: 45px; 
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+    
+.container .head .logo img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    background-color: transparent;
+}
+
+.container .content-container{
+    margin: 20px auto;
+    width: 90%;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.container .content-container .input{
+    flex-grow: 1;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 6px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .content-container img{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    vertical-align: middle;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .generate-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .generate{
+    width: 100px;
+    padding: 13px 18px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 3px 3px 15px rgba(29, 27, 28, 0.3), -3px -3px 15px rgba(219, 5, 190, 0.5);
+}
+
+.container .result-container {
+    margin: 20px auto;
+    width: 90%;
+    height: 55px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.container .result-container .result {
+    flex-grow: 1;
+    font-size: 24px;
+    margin: 0;
+    padding: 0 6px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .result-container img {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    vertical-align: middle;
+    border-radius: 50%;
+    object-fit: cover;
+} */
