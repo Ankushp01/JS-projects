@@ -1,25 +1,23 @@
 # 🚀 JavaScript Projects  
 
-This repository contains my JavaScript projects, built using HTML, CSS, and JavaScript. Each project showcases different concepts and functionalities.
+This repository contains my JavaScript projects, built using HTML, CSS, and JavaScript. Each project demonstrates different functionalities and real-world applications.  
 
 ## 📂 Projects  
 
-### 1️⃣ **Rock-Paper-Scissors Game**  
-- A simple Rock-Paper-Scissors game where the user plays against the computer.  
-- Uses JavaScript to generate random choices and determine the winner.  
+### 🌤️ **Weather App**  
+- A web app that fetches real-time weather data based on user input.  
+- Uses the OpenWeather API to display temperature, humidity, and weather conditions.  
+- Features a clean UI with responsive design.  
 
-### 2️⃣ **Countdown Timer**  
-- A timer where users can set a countdown, and it displays the remaining time.  
-- Built with JavaScript’s `setInterval` function for real-time updates.  
-
-### 3️⃣ **Expense Tracker (React)**  
-- A React-based expense tracker to log income and expenses.  
-- Uses React hooks like `useState` and `useContext` for state management.  
+### 🔐 **Password Generator**  
+- A tool that generates strong, random passwords based on user-selected criteria.  
+- Allows customization of password length and inclusion of numbers, symbols, and uppercase/lowercase letters.  
+- Built with JavaScript’s `Math.random()` and event listeners for user interactions.  
 
 ## 🛠️ **Technologies Used**  
 - HTML, CSS  
 - JavaScript (ES6+)  
-- React (for Expense Tracker)  
+- Fetch API (for Weather App)  
 
 ## 🚀 **How to Run**  
 1. Clone the repository:  
